@@ -4,14 +4,15 @@
 
 
 ## Initial setup and build
-```
-cd my-app
-```
 
 Clone repository
 ```
 https://github.com/MennaDarwish/jungle-scout-task-frontend.git
 ```
+```
+cd my-app
+```
+
 
 Install dependencies
 
