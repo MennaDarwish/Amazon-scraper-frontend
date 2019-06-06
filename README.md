@@ -2,7 +2,11 @@
 
 # Getting started
 
+
 ## Initial setup and build
+```
+cd my-app
+```
 
 Clone repository
 ```
