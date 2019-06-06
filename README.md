@@ -5,6 +5,9 @@
 ## Initial setup and build
 
 Clone repository
+```
+https://github.com/MennaDarwish/jungle-scout-task-frontend.git
+```
 
 Install dependencies
 
