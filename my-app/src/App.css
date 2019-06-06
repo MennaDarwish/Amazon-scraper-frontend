@@ -31,3 +31,22 @@
     transform: rotate(360deg);
   }
 }
+.nav-bar {
+  background: #233040;
+}
+
+.text-color {
+  color: #233040;
+}
+
+.nav-bar .navbar-brand {
+  color: #FF9800
+
+}
+
+button {
+  background-color: #FF9800 !important;
+    outline: none;
+    border: 0px !important;
+    color: #233040 !important;
+}

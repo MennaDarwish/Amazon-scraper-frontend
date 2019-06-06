@@ -1,10 +1,16 @@
-import React from 'react';
+import React, {Fragment} from 'react';
 import './App.css';
 import ProductFormConnected from './components/product';
+import { Navbar } from 'react-bootstrap';
 
 function App() {
   return (
-    <ProductFormConnected />
+    <Fragment>
+      <Navbar className="nav-bar">
+        <Navbar.Brand href="#home">Find your product</Navbar.Brand>
+      </Navbar>
+      <ProductFormConnected />
+    </Fragment>
   );
 }
 

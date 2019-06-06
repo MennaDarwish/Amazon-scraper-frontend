@@ -16,13 +16,15 @@ const Product = (props) => {
         return null
     }
     return (
-        <Card style={{ width: '34rem' }}>
+        <Card style={{ width: '34rem' }} className="mt-4">
+            <Card.Header className="text-color font-weight-bold">{name}</Card.Header>
             <Card.Body>
-                <Card.Title>{name}</Card.Title>
-                <Card.Subtitle className="mb-2 text-muted">{category}</Card.Subtitle>
+                <Card.Subtitle className="mb-2 text-muted product-subtitle">{category}</Card.Subtitle>
                 { product_dimensions && 
-                    ( <Card.Text>Product dimensions: {product_dimensions}</Card.Text>) }
+                    ( <Card.Text className="product-details"><span className="font-weight-bold">Product dimensions:</span> {product_dimensions}</Card.Text>) }
+                  {rank && ( <Card.Text className="product-details"><span className="font-weight-bold">Rank:</span> {rank} </Card.Text>)}
                 { url && <Card.Link href={url}>Find on Amazon</Card.Link>} 
+              
             </Card.Body>
         </Card>
     )
@@ -34,7 +36,7 @@ const ProductForm = ({ asinValue, handleChange, handleSubmit }) => {
         <Form onSubmit={handleSubmit}>
             <Form.Label>Enter Product ASIN</Form.Label>
             <Form.Control type="text" value={asinValue} onChange={handleChange} />
-            <Button variant="primary" type="submit">
+            <Button variant="primary" type="submit" className="mt-2 w-100">
                 Submit
             </Button>
         </Form>
@@ -61,7 +63,7 @@ class ProductFormConnected extends React.Component {
         const currentProduct = products[this.state.asinValue] || {};
         console.log(currentProduct);
         return (
-            <Container>
+            <Container className="mt-5">
                 <Row className="justify-content-lg-center">
                     <Col md="6">
                         <ProductForm 
