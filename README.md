@@ -17,7 +17,7 @@ cd my-app
 Install dependencies
 
 ```
-yarn install
+npm install
 ```
 
 In order to see results when submitting the form, the server has to be up and running https://github.com/MennaDarwish/jungle-scout-task-BE
