@@ -9,7 +9,7 @@ import { Form,
         Card} from 'react-bootstrap';
 
 const Product = (props) => {
-    const { name, rank, category, product_dimensions, url} = props.product;
+    const { name, rank, category, product_dimensions, url, price} = props.product;
     console.log(props.product)
     
     if (Object.entries(props.product).length === 0) {
@@ -20,10 +20,14 @@ const Product = (props) => {
             <Card.Header className="text-color font-weight-bold">{name}</Card.Header>
             <Card.Body>
                 <Card.Subtitle className="mb-2 text-muted product-subtitle">{category}</Card.Subtitle>
-                { product_dimensions && 
-                    ( <Card.Text className="product-details"><span className="font-weight-bold">Product dimensions:</span> {product_dimensions}</Card.Text>) }
-                  {rank && ( <Card.Text className="product-details"><span className="font-weight-bold">Rank:</span> {rank} </Card.Text>)}
-                { url && <Card.Link href={url}>Find on Amazon</Card.Link>} 
+                <Card.Text className="product-details">
+                    <span className="font-weight-bold">
+                        Product dimensions:
+                            </span> {product_dimensions? product_dimensions: "Missing product dimensions" }
+                </Card.Text>
+                  {( <Card.Text className="product-details"><span className="font-weight-bold">Rank:</span> {rank? rank : "Missing product rank"} </Card.Text>)}
+                  {( <Card.Text className="product-details"><span className="font-weight-bold">Price:</span> {price? price : "Missing product rank"} </Card.Text>)}
+                {<Card.Link href={url}>Find on Amazon</Card.Link>} 
               
             </Card.Body>
         </Card>
