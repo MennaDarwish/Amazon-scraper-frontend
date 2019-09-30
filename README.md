@@ -25,4 +25,4 @@ Start server
 npm start
 ```
 
-In order to see results when submitting the form, the server has to be up and running https://github.com/MennaDarwish/jungle-scout-task-BE
+In order to see results when submitting the form, the server has to be up and running https://github.com/MennaDarwish/Amazon-scraper-backend.git
