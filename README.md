@@ -7,7 +7,7 @@
 
 Clone repository
 ```
-https://github.com/MennaDarwish/jungle-scout-task-frontend.git
+https://github.com/MennaDarwish/Amazon-scraper-frontend.git
 ```
 ```
 cd my-app
