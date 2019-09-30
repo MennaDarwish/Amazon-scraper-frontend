@@ -1,4 +1,4 @@
-# jungle-scout-task-frontend
+# Amazon-scraper-frontend
 
 # Getting started
 
